@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8cdda, #1d2b64);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 50px; /* Added margin to push content down */
+    position: relative;
+    flex-grow: 1;
+}
+.item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px; /* Increased margin for more spacing */
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+#point1{
+    align-self: flex-start;
+}
+#point2{
+    align-self: flex-start;
+}
+#point3 {
+    align-self: flex-start;
+    margin-top: -200px;
+}
+#point4 {
+    align-self: flex-start;
+    margin-top: -200px;
+}
+#point5 {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 850px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+    .item {
+        width: 100%;
+    }
+
+    #point5 {
+        width: 100%;
+        text-align: justify;
+        position: static;
+        transform: none;
+        margin-top: 20px; /* Added margin for spacing */
+    }
+}
